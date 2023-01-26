@@ -26,6 +26,8 @@ jobs:
         run: pip install pytest
       - name: 'Install code coverage testing package'
         run: pip install coverage
+      - name: 'Install python code dependencies'
+        run: pip install numpy matplotlib
       - name: 'Run coverage test'
         run: coverage run -m pytest
       - name: 'Upload .coverage'
